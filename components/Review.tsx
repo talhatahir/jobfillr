@@ -2,19 +2,13 @@ import { FaStar } from "react-icons/fa";
 
 interface ReviewProps {
   rating: number;
-  title: string;
+  title?: string;
   content: string;
   author: string;
-  designation: string;
+  designation?: string;
 }
 
-const Review: React.FC<ReviewProps> = ({
-  rating = 5,
-  title = "Default Title",
-  content = "Default content for the review.",
-  author = "John Doe",
-  designation = "Customer",
-}) => {
+const Review: React.FC<ReviewProps> = ({ rating, title, content, author, designation }) => {
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
       <div className="flex items-center mb-2">
