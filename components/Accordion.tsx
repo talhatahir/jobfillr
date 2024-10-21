@@ -40,18 +40,18 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, isOpen, t
 
 const defaultAccordionItems = [
   {
-    title: "Sign up for free",
-    content: "Start your journey with a 34-day trial. It's easy no credit card or commitment.",
+    title: "Advanced form detection",
+    content:
+      "Using state of the art techniques to auto identify if you are filling a form. No need to manually select the form fields.",
   },
   {
-    title: "Easy to use",
-    content:
-      "Our app is designed to be user-friendly and easy to use. We want to provide a seamless experience for your users so that you can focus on what matters.",
+    title: "Free to use",
+    content: "The best quality at no cost. No subscription, no credit card required.",
   },
   {
-    title: "Focus on what matters",
+    title: "More fields for those special forms",
     content:
-      "With better financial management, you can reduce money-related stress and focus on what matters most. More to come.",
+      "For those pesky forms that have a lot of fields, you can provide more data to the extension to fill in more fields.",
   },
 ];
 

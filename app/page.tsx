@@ -17,6 +17,21 @@ export default function Page() {
         <Hero />
         <Features />
         <Section
+          leftHalf={<Accordion />}
+          rightHalf={
+            <div className="flex flex-col justify-end">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">
+                The best free Chrome extension!
+              </h2>
+              <p className="text-xl font-light">
+                Jobfillr is the best free Chrome extension for autofill. It is fast, easy to use, and has no
+                subscription or credit card required.
+              </p>
+            </div>
+          }
+        />
+        <Customers />
+        <Section
           leftHalf={
             <>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">
@@ -29,24 +44,10 @@ export default function Page() {
             </>
           }
           rightHalf={
-            <Image src={"/products/phone.png"} alt="section-image" width={500} height={100} className="w-1/2 h-auto" />
+            <Image src={"/products/rec1.gif"} alt="section-image" width={600} height={300} className="w-full h-auto" />
           }
         />
-        <Customers />
-        <Section
-          leftHalf={<Accordion />}
-          rightHalf={
-            <div className="flex flex-col justify-end">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">
-                Highlight the key features
-              </h2>
-              <p className="text-xl font-light">
-                Talk about some of the key features of your app that you want to highlight. Use the beautiful accordion
-                to highlight the key features of your app.
-              </p>
-            </div>
-          }
-        />
+
         <Reviews />
         <Download />
       </main>
