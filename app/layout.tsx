@@ -19,6 +19,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
+        <meta property="og:title" content="Jobfillr" />
+        <meta property="og:description" content="Autofill job applications" />
+        <meta property="og:image" content="https://www.jobfillr.com/icons/icon-96.png" />
+        <meta property="og:url" content="https://www.jobfillr.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Jobfillr" />
+        <meta name="twitter:description" content="Autofill job applications" />
+        <meta name="twitter:image" content="https://www.jobfillr.com/icons/icon-128.png" />
       </head>
       <body className="bg-white dark:bg-black min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
