@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "styles/globals.css";
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="twitter:description" content="Autofill job applications" />
         <meta name="twitter:image" content="https://www.jobfillr.com/icons/icon-128.png" />
       </head>
-      <GoogleTagManager gtmId="G-3Q7FK0H4T2" />
+      <GoogleAnalytics gaId="G-3Q7FK0H4T2" />
       <body className="bg-white dark:bg-black min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
