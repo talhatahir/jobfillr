@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaChrome } from "react-icons/fa";
 
 export default function Hero() {
@@ -21,6 +22,14 @@ export default function Hero() {
           <FaChrome className="mr-2" />
           Add to Chrome
         </Link>
+        <a href="https://www.buymeacoffee.com/talhatahir" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png"
+            alt="Buy Me A Coffee"
+            width={145}
+            height={40}
+          />
+        </a>
       </div>
     </section>
   );
