@@ -31,6 +31,19 @@ export default function Hero() {
           />
         </a>
       </div>
+      <div className="flex justify-center space-x-6 mt-12">
+        <a
+          href="https://www.producthunt.com/posts/jobfillr?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-jobfillr"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=700807&theme=light"
+            alt="Jobfillr - Autofill&#0032;your&#0032;job&#0032;application&#0032;forms&#0032;in&#0032;a&#0032;single&#0032;click&#0033; | Product Hunt"
+            width={250}
+            height={54}
+          />
+        </a>
+      </div>
     </section>
   );
 }
